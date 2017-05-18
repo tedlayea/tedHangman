@@ -136,3 +136,7 @@ function allQuestions(questionNumber){
 }
 
 })
+
+//browser compatability issues. Not functioning properly in Chrome browser
+//check out the console. Some bug issues with the form submission in the console
+//line 76 undefined
