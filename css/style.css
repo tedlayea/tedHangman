@@ -1,0 +1,142 @@
+html{height: 100%}
+body{
+/*To arrange the layout*/
+  height:100%;
+  padding:0px;
+  margin: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+/*To animate the background between two color*/
+  background-color: lightblue;
+  animation-name: backgroundColorChange;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+/*To change the backfround color*/
+@keyframes backgroundColorChange {
+  from {background-color: peachpuff}
+    to{background-color: lightgray}
+}
+h1{
+  position: relative;
+  top:380px;
+  font-size: 40px;
+  text-align: center;
+  padding: 0px;
+  border: 0px;
+  margin:0px;
+}
+h2{
+  text-align: center;
+  position: relative;
+  top:380px;
+  }
+.frontImage {
+  position: relative;
+  width:450px;
+  height:450px;
+  top:360px;
+  left:10px;
+  padding: 10px;
+}
+#man{
+  position: relative;
+  width:150px;
+  height:400px;
+  top:0px;
+  left:00px;
+
+}
+#hangman{
+  position: relative;
+  width:600px;
+  height:650px;
+  top:200px;
+  left:-280px;
+  padding: 0px;
+  border: 0px;
+  margin:0px;
+}
+#display{
+  position: relative;
+  width:500px;
+  height:350px;
+  top:-400px;
+  left:300px;
+  padding: 0px;
+  border: 0px;
+  margin:0px;
+  }
+.score{
+  position: relative;
+  top:-355px;
+  left:300px;
+  width:580px;
+  height:200px;
+  background-color: black;
+  color: white;
+  font-size:30px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  border-style:inset;
+  border-radius: 40px;
+}
+form {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left:510px;
+  top:-550px;
+}
+#keyboard{
+  position: relative;
+  top: 700px;
+  left:-120px;
+  width: 700px;
+}
+footer img{
+  position: relative;
+  width:45px;
+  top:40px;
+}
+button{
+  background-color: lightblue;
+}
+#hang{
+  position: relative;
+  width:300px;
+  height:350px;
+  top:250px;
+  left:50px;
+}
+#instruction{
+  position: relative;
+  top:-250px;
+  left:800px;
+  width:200px;
+  height:200px;
+}
+#frameOfInstruction{
+  position: relative;
+  top:-200px;
+  left:800px;
+}
+.rules{
+  position: relative;
+  top:-550px;
+  left:900px;
+}
+.answer{
+  position: relative;
+  width:500px;
+  height:300px;
+  top:-400px;
+  left:300px;
+  font-weight: bolder;
+}

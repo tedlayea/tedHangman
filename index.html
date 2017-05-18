@@ -1,0 +1,39 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Game Name</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+      <script src="game.js"></script>
+    </head>
+    <body >
+      <section>
+        <div id="welcome">
+          <h1>Welcome to Hangman!!!</h1>
+          <h2> Be ready to explore world heritage!!!</h2>
+        </div>
+        <div class="imageAnimated">
+          <img  id="bottomImage" class="frontImage" src="img/lalibela.jpg" alt="Lalibella">
+          <img id="hang" src="img/man.png" alt="Hangman">
+          <button id="instruction">Instruction</button>
+          <img id="frameOfInstruction" src="img/frame.png" alt="instructionFrame">
+          <div class="rules">Instruction:<br><br>For each question you will see a picture
+            <br> of famouse heritage, then you have to <br>
+             type the first letter of its name  <br>
+             If you have no idea, click on "Hint".<br> <br>To start the game, please enter
+             <br>your name, select your Gender <br>and click Submit.<br><br>Good Luck</div>
+        </div>
+        <form id="registering">
+          <input id="playerName"  type="text" placeholder="Enter Your Name here, please"><br>
+          <input id="male" type="radio" name="Gender" value="Male" checked>Male</input>
+          <input id="female" type="radio" name="Gender" value="Female">Female</input>
+          <button  id="submitButton" type="submit" >Submit</button>
+        </form>
+      </section>
+      <footer id="keyboard">
+
+      </footer>
+
+    </body>
+  </html>
