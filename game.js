@@ -132,10 +132,13 @@ function allQuestions(questionNumber){
     if(restart==1){
       questionNumber=0
       allQuestions(questionNumber)
+      // AM: See my note below and how it might pertain to starting the game over.
     }
     else if(restart==2){
       // alert("Close");
       window.close();
+      // AM: Instead of closing the window, think about how you could modify the page to reflect the end state of your application.
+      // AM: What in the DOM needs to be hidden/shown? What data values need to be reset?
     }
     else{
       alert("Please Enter either 1 or 2 only!!!");
