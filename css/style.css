@@ -1,3 +1,4 @@
+/* AM: Please be consistent with spacing and indentation! */
 html{height: 100%}
 body{
 /*To arrange the layout*/
@@ -18,7 +19,7 @@ body{
   animation-direction: alternate;
 }
 /*To change the backfround color*/
-@keyframes backgroundColorChange {
+@keyframes backgroundColorChange {  /* AM: Nice! */
   from {background-color: peachpuff}
     to{background-color: lightgray}
 }
@@ -140,3 +141,7 @@ button{
   left:300px;
   font-weight: bolder;
 }
+/* AM: This is bonus material, but you'll find that as you begin to think about responsive design and what your application will look like on mobile device... */
+/* AM: ...that using `px` for everything may make implementing responsive design difficult. */
+/* AM: I encourage you to practice using other units (e.g., `%`, `em`, `vw`, `vh`) in your CSS and figuring out what the best use cases for each might be. */
+/* AM: Happy to talk about this further! */

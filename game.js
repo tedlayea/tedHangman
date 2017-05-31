@@ -1,3 +1,4 @@
+// AM: I encourage you to think about you could organize this game into an object(s) or class(es).
 $(document).ready(function (){
 var player=$("section form input #playerName").val();
 var submitButton=$("#submitButton")
@@ -22,6 +23,9 @@ var question =[{questioni:"img/StatueOfLiberty.jpg",answeri:"18" ,answerNote:"*t
 {questioni:"img/generalAssembly.png",answeri:"6",answerNote:"*eneral Assembly (1875)\n DC(USA)"}
 ]
 function gamePage(){
+  // AM: Perhaps you could incorporate some of the below code into your HTML and, if you don't want it to be visible on page load, just set its initial CSS display value to `none`.
+  // AM: This is a good strategy for HTML that will not change as the user interacts with the application.
+  // AM: Plus, your Javascript ends up being more concise and clean!
   //Hang
   $("section").html("")
   var hangmanImage=$('<img >')
@@ -57,6 +61,8 @@ function gamePage(){
   createKeybord()
 }
 function createKeybord(){
+  // AM: Make sure to remove `console.log` statements from your final submission. You can keep these in a separate "debugging" branch if you want.
+  // AM: You should assume that potential employers will be looking at this code after WDI!
   console.log("keyboard created");
   for (i=0;i<alphabet.length;i++)
   {
@@ -67,6 +73,7 @@ function createKeybord(){
   }
   allQuestions(questionNumber)
 }
+// AM: Encourage you to use `let` and `const` wherever possible.
 //To ask question
 var questionNumber=0;
 var wrongAnswer=0;
@@ -88,7 +95,7 @@ function allQuestions(questionNumber){
       if(this.id==question[questionNumber].answeri){
         console.log("Id:"+this.id)
         console.log("Correct")
-        $("#man").attr('src','img/man.png').animate({'left':35}).animate({'top':40})
+        $("#man").attr('src','img/man.png').animate({'left':35}).animate({'top':40})  // AM: This is a fun feature!
         $(".score").text("Your score:"+(parseInt(questionNumber)+1)+"/6")
         wrongAnswer=0;
         questionNumber++
@@ -98,6 +105,9 @@ function allQuestions(questionNumber){
         console.log("Id:"+this.id)
         console.log("InCorrect")
         wrongAnswer=wrongAnswer+1
+        // AM: The below `.animate` commands look pretty similar, with the exception of the numerical values being passed into the methods.
+        // AM: Perhaps you could define a function that you could call in the below conditional statements, making sure to pass in the numerical values as arguments.
+        // AM: That way your code looks less repetitive.
         if(wrongAnswer===1){
           console.log("wrong"+wrongAnswer);
           // $("#hangman").animate({'left':80})

@@ -11,3 +11,5 @@ At this stage, only the basic functionality are working. But in future I would l
 Included but unsolved problems:
 1. Restart button doesn`t restart the game properly
 2. The game is not closed when user want to quit.
+
+AM: Look into using Markdown for your readme. It helps a lot with styling (and it's what we use in our lesson plans!).
