@@ -9,7 +9,7 @@ Approach:
 * The approach used in this game development is step by step incremental way in which different parts of the game developed and tested before further continuing other parts of the game.
 
 Included but unsolved problems:
-1. Restart button doesn`t restart the game properly
+1. Restart button doesn't restart the game properly
 2. The game is not closed when user wants to quit.
 
 Future works:
