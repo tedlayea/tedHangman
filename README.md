@@ -20,5 +20,7 @@ At this stage, only the basic functionalities are working. But in future I would
 4. Take more than one value from keyboard, store and compare the result
 5. To add option to play alone or with another player
 
+The app is deployed using gh-page and can be found: https://tedlayea.github.io/tedHangman/
+
 Screen shot of the image can be found from screen_shots directory.
 * ![alt text](screen_shots/hangman2.png)
